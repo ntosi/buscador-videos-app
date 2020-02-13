@@ -5,12 +5,13 @@ import youtube from '../api/youtube'
 
 class App extends React.Component{
     
-    onTextSubmit = (text) => {
-        youtube.get('/search', {
+    onTextSubmit = async (text) => {
+        const response = await youtube.get('/search', {
             params: {
                 q: text
-            }
+        }
         })
+        console.log(response)
     }
     
     render(){

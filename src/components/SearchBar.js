@@ -28,7 +28,7 @@ class SearchBar extends React.Component{
                     </div>
                 </form>
                 <div>
-                    {this.state.text}
+                    
                 </div>
             </div>
         )
