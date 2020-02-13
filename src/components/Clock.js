@@ -12,7 +12,7 @@ class Clock extends React.Component{
 
     render(){
         return(
-        <div>{this.state.time}</div>
+        <div className="clock ui segment">{this.state.time}</div>
         )
     }
 
